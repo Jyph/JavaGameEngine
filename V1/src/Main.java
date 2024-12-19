@@ -1,37 +1,19 @@
 
-import java.util.Scanner;
+import javax.swing.JFrame;
 
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+public class Main
+{
+    public static void main(String[] args) { new Main(); }
 
-        System.out.println("Nice name, " + getName());
 
-        Wait(4000);
-        
-        System.out.println("Welp, bye! (ig)");
-    }
+    int scr_w = 500, scr_h = 500;
+    public Main()
+    {
+        JFrame window = new JFrame("Java Game Engine");
 
-    static String getName() {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("What is your name?");
-        String name = scanner.next();
-        
-        scanner.close();
-        return name;
-    }
-
-    static void Wait(long time) {
-        time /= 5;
-        try {
-            Thread.sleep(time);
-            for (int i = 0; i < 4; i++) {
-                System.out.print(".");
-                Thread.sleep(time);
-            }
-        }
-        catch (Exception e) {  }
-        System.out.println("");
+        window.setDefaultCloseOperation(3);
+        window.setSize(scr_w + 14, scr_h + 37);
+        window.setVisible(true);
+        window.setLocationRelativeTo(null);
     }
 }
