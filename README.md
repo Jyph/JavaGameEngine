@@ -6,6 +6,6 @@ As of now:
 
 ## Goals for Next Version
 
-- [ ] Create window
+- [x] Create window
 - [ ] Open Directory
 - [ ] Create "Project"
